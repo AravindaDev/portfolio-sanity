@@ -31,7 +31,7 @@ function SinglePost() {
       )
       .then((data) => setSinglePost(data[0]))
       .catch(console.error);
-  }, []);
+  }, [slug]);
 
   if (!singlePost) return <div>Loading....</div>;
 
